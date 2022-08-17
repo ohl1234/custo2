@@ -30,7 +30,7 @@ $(function(){
 
 
     //모든 이미지 페럴렉스 통합판 //foreach = each
-    $('[data-parallex]').each(function(i,el){
+    $('[data-parallex]').each(function(i,el){ // index, element
         parent = $(this).parent();
 
         gsap.to(el,{

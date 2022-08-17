@@ -12,6 +12,7 @@
     line-height: 1.4285714286;
     .sc-home &{
         color: $color-white;
+        opacity: 0;
     }
     &::before,
     &::after{
