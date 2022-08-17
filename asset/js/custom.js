@@ -120,8 +120,7 @@ $(function(){
         .to('.text-item:nth-child('+idx1+')',{ opacity:0,y:-100})
         .to('.text-item:nth-child('+idx2+')',{ opacity:1})
       })
-    
-    $('.sc-product .column-left .thumb-box').hover(function(){
+      $('.sc-product .column-left .thumb-box').hover(function(){
         $(this).children().css({
             'transform':'scale(1.05)'
         })
