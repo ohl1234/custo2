@@ -124,16 +124,14 @@ $(function(){
         .to('.text-item:nth-child('+idx2+')',{ opacity:1}) // 다음 택스트는 불투명하게
       })
 
-      // hover
-        $('.sc-product .column-left .thumb-box').hover(function(){
-        $(this).css({
-            'transform':'scale(1.05)'
+    //hover
+    $('.sc-product .thumb-wrap').hover(function(){
+            $(this).css({'clipPath': 'inset(0.625rem round 1.25rem)'})
+            $(this).find('.thumb-box').css({ 'transform':'scale(1.05)'})
+        },function(){
+            $(this).css({'clipPath': 'inset(0)'})
+            $(this).find('.thumb-box').css({'transform':'scale(1)'})
         })
-    },function(){
-        $(this).css({
-            'transform':'scale(1)'
-        })
-    })
     // 1. swiper slide
     const swiper = new Swiper(".slide", {
         // speed:1000,
