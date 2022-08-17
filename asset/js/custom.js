@@ -126,11 +126,11 @@ $(function(){
 
     //hover
     $('.sc-product .thumb-wrap').hover(function(){
-            $(this).css({'clipPath': 'inset(0.625rem round 1.25rem)'})
-            $(this).find('.thumb-box').css({ 'transform':'scale(1.05)'})
+            //$(this).css({'clipPath': 'inset(0.625rem round 1.25rem)'})
+            gsap.to('.thumb-wrap .thumb-box',{ scale:1.05 })
         },function(){
-            $(this).css({'clipPath': 'inset(0)'})
-            $(this).find('.thumb-box').css({'transform':'scale(1)'})
+            //$(this).css({'clipPath': 'inset(0)'})
+            gsap.to('.thumb-wrap .thumb-box',{ scale:1 })
         })
     // 1. swiper slide
     const swiper = new Swiper(".slide", {
