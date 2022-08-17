@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custo: Bringing the world to your doorstep.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./asset/images/favicon/favicon-custo.ico">
+</head>
+<body>
+    <div class="load">
+        <div class="load-wrap">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 168 34" width="168" height="34" style="enable-background:new 0 0 168 34" xml:space="preserve" class="load-logo">
+                <path d="M15.4 4.5c6.4 0 8.4 4.1 9.1 7.3h5.3C29 5.3 23.9.1 15.5.1 6.1.1 0 7.3 0 17.1S6 34 15.5 34c8.4 0 13.5-5.2 14.2-12.6h-5.3c-.3 4-2.6 8.2-9 8.2-7.3 0-10.1-6.1-10.1-12.6 0-6.4 2.8-12.5 10.1-12.5zM54.6 22.2c0 5.1-2.6 7.4-7.8 7.4S39 27.3 39 22.2V.7h-5.2v21.6c0 7 3.9 11.7 13 11.7 9.2 0 13-4.7 13-11.8V.7h-5.2v21.5zM77.7 14.3c-4.3-1.1-7.8-1.9-7.8-5.5 0-2.8 2.2-4.3 6.3-4.3 4.9 0 7.2 2.2 7.7 6.1h5.4C88.8 4 83.9.2 76.3.2c-7.1 0-11.6 3.2-11.6 8.9 0 6.2 5.7 7.9 10.9 9.2 6 1.5 9.3 2.1 9.3 6.2 0 2.9-1.7 5.2-7 5.2-6.3 0-8.9-2.9-9.3-7.3h-5.3C63.6 29.7 69.6 34 78 34c8.3 0 12.2-4.2 12.2-9.8 0-6.9-6-8.4-12.5-9.9zM91 5.1h10.7v28.3h5.2V5.1h10.7V.7H91zM134.3.1c-9.8 0-16.2 7.1-16.2 16.9s6.4 17 16.2 17c9.9 0 16.3-7.2 16.3-17S144.2.1 134.3.1zm.1 29.5c-7.8 0-11-5.9-11-12.6s3.2-12.6 11-12.6 11 5.9 11 12.6-3.2 12.7-11 12.6zM163.3 6.1c.9-.2 1.4-.7 1.4-1.6 0-1.2-.8-1.9-2.3-1.9h-2.7v6.5h1.3V6.6h1.1c1.7 0 1 2.2 1.5 2.5h1.3V9c-.5-.2 0-2.6-1.6-2.9zm-1.3-.5h-1V3.7h1c.7 0 1.3.1 1.3.9s-.5 1-1.3 1z"></path>
+                <path d="M162.1 0c-3.3 0-5.9 2.5-5.9 5.9 0 3.4 2.6 5.9 5.9 5.9s5.9-2.5 5.9-5.9c0-3.4-2.6-5.9-5.9-5.9zm0 11c-2.7 0-4.9-2.1-4.9-5.1s2.2-5.1 4.9-5.1S167 3 167 5.9c0 3-2.2 5.1-4.9 5.1z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo-area">
+                <h1 class="logo">
+                    <a href="#" class="link-logo">
+                        <span class="blind">Custo®</span>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 168 34" width="168" height="34" style="enable-background:new 0 0 168 34" xml:space="preserve">
+                            <path d="M15.4 4.5c6.4 0 8.4 4.1 9.1 7.3h5.3C29 5.3 23.9.1 15.5.1 6.1.1 0 7.3 0 17.1S6 34 15.5 34c8.4 0 13.5-5.2 14.2-12.6h-5.3c-.3 4-2.6 8.2-9 8.2-7.3 0-10.1-6.1-10.1-12.6 0-6.4 2.8-12.5 10.1-12.5zM54.6 22.2c0 5.1-2.6 7.4-7.8 7.4S39 27.3 39 22.2V.7h-5.2v21.6c0 7 3.9 11.7 13 11.7 9.2 0 13-4.7 13-11.8V.7h-5.2v21.5zM77.7 14.3c-4.3-1.1-7.8-1.9-7.8-5.5 0-2.8 2.2-4.3 6.3-4.3 4.9 0 7.2 2.2 7.7 6.1h5.4C88.8 4 83.9.2 76.3.2c-7.1 0-11.6 3.2-11.6 8.9 0 6.2 5.7 7.9 10.9 9.2 6 1.5 9.3 2.1 9.3 6.2 0 2.9-1.7 5.2-7 5.2-6.3 0-8.9-2.9-9.3-7.3h-5.3C63.6 29.7 69.6 34 78 34c8.3 0 12.2-4.2 12.2-9.8 0-6.9-6-8.4-12.5-9.9zM91 5.1h10.7v28.3h5.2V5.1h10.7V.7H91zM134.3.1c-9.8 0-16.2 7.1-16.2 16.9s6.4 17 16.2 17c9.9 0 16.3-7.2 16.3-17S144.2.1 134.3.1zm.1 29.5c-7.8 0-11-5.9-11-12.6s3.2-12.6 11-12.6 11 5.9 11 12.6-3.2 12.7-11 12.6zM163.3 6.1c.9-.2 1.4-.7 1.4-1.6 0-1.2-.8-1.9-2.3-1.9h-2.7v6.5h1.3V6.6h1.1c1.7 0 1 2.2 1.5 2.5h1.3V9c-.5-.2 0-2.6-1.6-2.9zm-1.3-.5h-1V3.7h1c.7 0 1.3.1 1.3.9s-.5 1-1.3 1z"></path>
+                            <path d="M162.1 0c-3.3 0-5.9 2.5-5.9 5.9 0 3.4 2.6 5.9 5.9 5.9s5.9-2.5 5.9-5.9c0-3.4-2.6-5.9-5.9-5.9zm0 11c-2.7 0-4.9-2.1-4.9-5.1s2.2-5.1 4.9-5.1S167 3 167 5.9c0 3-2.2 5.1-4.9 5.1z"></path>
+                        </svg>
+                    </a>
+                </h1>
+            </div>
+            <nav class="gnb-area">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="#" class="link-gnb">
+                            <div class="link-wrap">
+                                <span class="link-default">Smart mailbox</span>
+                                <span class="link-hover">Smart mailbox</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#" class="link-gnb">
+                            <div class="link-wrap">
+                                <span class="link-default">How it works</span>
+                                <span class="link-hover">How it works</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#" class="link-gnb">
+                            <div class="link-wrap">
+                                <span class="link-default">About</span>
+                                <span class="link-hover">About</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="m-link-order mobile">Pre order - €100</a>
+            </nav>
+            <div class="btn-area">
+                <a href="#" class="link-order">
+                    <span class="pc">Pre order - €100</span>
+                    <span class="mobile">Pre order</span>
+                </a>
+                <button class="btn-menu mobile">
+                    <span class="blind">메뉴열기</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+    
+        </header>
+        <main class="container">
+            <section class="sc-home">
+                <div class="group-flex1">
+                    <div class="title-area">
+                        <h2 class="sc-title">
+                            <div class="txt-line1"><div class="text">Receive the world</div></div>
+                            <div class="txt-line2"><div class="text">at your doorstep.</div></div>
+                        </h2>
+                        <a href="#" class="link-btn"><span>Discover our smart mailbox</span></a>
+                    </div>
+                    <div class="home-logo-area">
+                        <svg width="168" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 34" style="enable-background:new 0 0 168 34" xml:space="preserve">
+                            <path class="char" d="M15.4 4.5c6.4 0 8.4 4.1 9.1 7.3h5.3C29 5.3 23.9.1 15.5.1 6.1.1 0 7.3 0 17.1S6 34 15.5 34c8.4 0 13.5-5.2 14.2-12.6h-5.3c-.3 4-2.6 8.2-9 8.2-7.3 0-10.1-6.1-10.1-12.6 0-6.4 2.8-12.5 10.1-12.5z"></path>
+                            <path class="char" d="M54.6 22.2c0 5.1-2.6 7.4-7.8 7.4-5.2 0-7.8-2.3-7.8-7.4V.7h-5.2v21.6c0 7 3.9 11.7 13 11.7 9.2 0 13-4.7 13-11.8V.7h-5.2v21.5z"></path>
+                            <path class="char" d="M77.7 14.3c-4.3-1.1-7.8-1.9-7.8-5.5 0-2.8 2.2-4.3 6.3-4.3 4.9 0 7.2 2.2 7.7 6.1h5.4C88.8 4 83.9.2 76.3.2c-7.1 0-11.6 3.2-11.6 8.9 0 6.2 5.7 7.9 10.9 9.2 6 1.5 9.3 2.1 9.3 6.2 0 2.9-1.7 5.2-7 5.2-6.3 0-8.9-2.9-9.3-7.3h-5.3C63.6 29.7 69.6 34 78 34c8.3 0 12.2-4.2 12.2-9.8 0-6.9-6-8.4-12.5-9.9z"></path>
+                            <path class="char" d="M91 5.1h10.7v28.3h5.2V5.1h10.7V.7H91z"></path>
+                            <path class="char" d="M134.3.1c-9.8 0-16.2 7.1-16.2 16.9 0 9.8 6.4 17 16.2 17 9.9 0 16.3-7.2 16.3-17S144.2.1 134.3.1zm.1 29.5c-7.8 0-11-5.9-11-12.6 0-6.7 3.2-12.6 11-12.6s11 5.9 11 12.6c0 6.7-3.2 12.7-11 12.6z"></path>
+                            <g class="char">
+                              <path d="M162.1 0c-3.3 0-5.9 2.5-5.9 5.9s2.6 5.9 5.9 5.9 5.9-2.5 5.9-5.9-2.6-5.9-5.9-5.9zm0 11c-2.7 0-4.9-2.1-4.9-5.1s2.2-5.1 4.9-5.1S167 3 167 5.9c0 3-2.2 5.1-4.9 5.1z"></path>
+                              <path d="M163.3 6.1c.9-.2 1.4-.7 1.4-1.6 0-1.2-.8-1.9-2.3-1.9h-2.7v6.5h1.3V6.6h1.1c1.7 0 1 2.2 1.5 2.5h1.3V9c-.5-.2 0-2.6-1.6-2.9zm-1.3-.5h-1V3.7h1c.7 0 1.3.1 1.3.9s-.5 1-1.3 1z"></path>
+                            </g>
+                          </svg>
+                    </div>
+                    <div class="thumb-area">
+                        <figure>
+                            <img src="./asset/images/visual-product.webp" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-smart">
+                <div class="group-flex2">
+                    <div class="desc-area">
+                        <p class="desc">Never let a parcel delivery rule your entire schedule again.</p>
+                    </div>
+                    <div class="title-area start-6">
+                        <h2 class="sc-title">Spending time looking for your parcel around the neighbourhood is a thing of the past. That’s a promise.</h2>
+                        <a href="#" class="link-btn"><span>Discover our smart mailbox</span></a>
+                    </div>
+                </div>
+                <div class="group-flex3">
+                    <div class="slide-area">
+                        <div class="slide swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/slide-thumb1.jpg" alt="slide1" data-parallex >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/slide-thumb2.webp" alt="slide2" data-parallex >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/slide-thumb3.webp" alt="slide3" data-parallex >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-flex4">
+                    <div class="text-area start-6">
+                        <div class="text-box">
+                            <strong class="title">Smart technology at your front door.</strong>
+                            <p class="text">Codes, smart bells or special door locks are a thing of the past. The Custo® smart mailbox opens by using the barcode on the parcel. No more extra work (both for yourself and for the courier) because, thanks to our 5G connection the only thing you have to open is your package.</p>
+                        </div>
+                        <div class="text-box">
+                            <strong class="title">Always a safe delivery option with Custo®.</strong>
+                            <p class="text">We are all busy. That's why Custo® works for you, not the other way around. This allows you to free up more time for what really matters: family, friends, sports, hobbies, travel, ... Without stress or worry about missing a delivery. And last but not least, we also created a slot (on the side) for all your letters and newspapers....</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-product">
+                <div class="group-flex2">
+                    <div class="desc-area">
+                        <p class="desc">Custo® is the very first smart mailbox of its kind.</p>
+                    </div>
+                    <div class="title-area start-6">
+                        <h2 class="sc-title">Never worry about a delivery again, Custo® is here.</h2>
+                    </div>
+                </div>
+                <div class="group-flex5">
+                    <div class="column-left">
+                        <a href="#" class="thumb-box">
+                            <img src="./asset/images/product-thumb1.webp" alt="product1" data-parallex >
+                        </a>
+                        <a href="#" class="info-box">
+                            <span class="product-info">Custo 1<em class="price">From €699</em></span>
+                        </a>
+                    </div>
+                    <div class="column-right">
+                        <figure class="thumb-box">
+                            <img src="./asset/images/product-thumb2.webp" alt="" data-parallex >
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-works">
+                <div class="group-flex2">
+                    <div class="title-area">
+                        <h2 class="sc-title">Custo® will integrate with your life seamlessly.</h2>
+                        <a href="#" class="link-btn start-10"><span>Discover our smart mailbox</span></a>
+                    </div>
+                </div>
+                <div class="group-flex6">
+                    <ol class="works-list">
+                        <li class="works-item">
+                            <figure class="thumb-box work1">
+                                <img src="./asset/images/Integration-thumb1.jpg" alt="">
+                            </figure>
+                            <a href="#" class="info-box start-6">
+                                <span class="num">01.</span>
+                                <span class="desc start-2">Order online, as much as you want.</span>
+                                <div class="guage first-bar"></div>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <figure class="thumb-box work2">
+                                <img src="./asset/images/Integration-thumb2.jpg" alt="">
+                            </figure>
+                            <a href="#" class="info-box start-6">
+                                <span class="num">02.</span>
+                                <span class="desc start-2">Get all the information in the app.</span>
+                                <div class="guage"></div>
+                            </a>
+                            
+                        </li>
+                        <li class="works-item">
+                            <figure class="thumb-box work3">
+                                <img src="./asset/images/Integration-thumb3.jpg" alt="">
+                            </figure>
+                            <a href="#" class="info-box start-6">
+                                <span class="num">03.</span>
+                                <span class="desc start-2">Get notified of your delivery.</span>
+                                <div class="guage"></div>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <figure class="thumb-box work4">
+                                <img src="./asset/images/Integration-thumb4.jpg" alt="">
+                            </figure>
+                            <a href="#" class="info-box start-6">
+                                <span class="num">04.</span>
+                                <span class="desc start-2">Enjoy worryfree deliveries.</span>
+                                <div class="guage"></div>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section class="sc-homeapp">
+                <div class="group-wrapper">
+                    <div class="column-left start-2">
+                        <div class="title-area">
+                            <h2 class="sc-title">Custo's app is your personal assistant for all your parcels.</h2>
+                        </div>
+                        <ul class="text-list pc">
+                            <li class="text-item">
+                                <div class="text-box">
+                                    <strong class="title">01. Track your packages.</strong>
+                                    <p class="text">Custo® collects all shipping information about your orders in one place . This means no more searching through tons of emails to find your tracking information.</p>
+                                </div>
+                            </li>
+                            <li class="text-item">
+                                <div class="text-box">
+                                    <strong class="title">02. Get the notifications you want.</strong>
+                                    <p class="text">Custo® only provides notifications when it is necessary.This way you will be the first to know about a received package, a status change, or an open door.</p>
+                                </div>
+                            </li>
+                            <li class="text-item">
+                                <div class="text-box">
+                                    <strong class="title">03. Share with your neighbourhood.</strong>
+                                    <p class="text">Do you want to share your Custo® with family, friends or neighbours? No problem! Give access to other people but stay in control of your Custo®.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-right start-7">
+                        <ul class="thumb-list">
+                            <li class="thumb-item">
+                                <figure class="thumb-box">
+                                    <img src="./asset/images/homeapp-thumb1.webp" alt="01. Track your packages." data-parallex>
+                                </figure>
+                                <div class="text-box mobile">
+                                    <strong class="title">01. Track your packages.</strong>
+                                    <p class="text">Custo® collects all shipping information about your orders in one place . This means no more searching through tons of emails to find your tracking information.</p>
+                                </div>
+                            </li>
+                            <li class="thumb-item">
+                                <figure class="thumb-box">
+                                    <img src="./asset/images/homeapp-thumb2.webp" alt="02. Get the notifications you want." data-parallex >
+                                </figure>
+                                <div class="text-box mobile">
+                                    <strong class="title">02. Get the notifications you want.</strong>
+                                    <p class="text">Custo® only provides notifications when it is necessary.This way you will be the first to know about a received package, a status change, or an open door.</p>
+                                </div>
+                            </li>
+                            <li class="thumb-item">
+                                <figure class="thumb-box">
+                                    <img src="./asset/images/homeapp-thumb3.webp" alt="03. Share with your neighbourhood." data-parallex >
+                                </figure>
+                                <div class="text-box mobile">
+                                    <strong class="title">03. Share with your neighbourhood.</strong>
+                                    <p class="text">Do you want to share your Custo® with family, friends or neighbours? No problem! Give access to other people but stay in control of your Custo®.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-about">
+                <div class="column-left">
+                    <figure class="thumb-box">
+                        <img src="./asset/images/about-thumb1.jpg" alt="" data-parallex>
+                    </figure>
+                </div>
+                <div class="column-right start-8">
+                    <div class="title-area">
+                        <h2 class="sc-title">Custo® was created by experts & investors with a unique vision of the future.</h2>
+                        <a href="#" class="link-btn"><span>Learn more about us</span></a>
+                    </div>
+                    <div class="desc-area">
+                        <strong class="title">Custo® is supported by investors.</strong>
+                        <p class="desc">Our investors believe in a more sustainable delivery solution. Custo® offers this option in the form of beautiful & innovative design.</p>
+                    </div>
+                </div>
+            </section>  
+        </main>
+        <footer class="footer">
+            <div class="group-flex7">
+                <div class="ft-logo-area">
+                    <h2 class="footer-logo">
+                        <a href="#" class="link-logo">
+                            <span class="blind">Custo®</span>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 168 34" width="168" height="34" style="enable-background:new 0 0 168 34" xml:space="preserve">
+                                <path d="M15.4 4.5c6.4 0 8.4 4.1 9.1 7.3h5.3C29 5.3 23.9.1 15.5.1 6.1.1 0 7.3 0 17.1S6 34 15.5 34c8.4 0 13.5-5.2 14.2-12.6h-5.3c-.3 4-2.6 8.2-9 8.2-7.3 0-10.1-6.1-10.1-12.6 0-6.4 2.8-12.5 10.1-12.5zM54.6 22.2c0 5.1-2.6 7.4-7.8 7.4S39 27.3 39 22.2V.7h-5.2v21.6c0 7 3.9 11.7 13 11.7 9.2 0 13-4.7 13-11.8V.7h-5.2v21.5zM77.7 14.3c-4.3-1.1-7.8-1.9-7.8-5.5 0-2.8 2.2-4.3 6.3-4.3 4.9 0 7.2 2.2 7.7 6.1h5.4C88.8 4 83.9.2 76.3.2c-7.1 0-11.6 3.2-11.6 8.9 0 6.2 5.7 7.9 10.9 9.2 6 1.5 9.3 2.1 9.3 6.2 0 2.9-1.7 5.2-7 5.2-6.3 0-8.9-2.9-9.3-7.3h-5.3C63.6 29.7 69.6 34 78 34c8.3 0 12.2-4.2 12.2-9.8 0-6.9-6-8.4-12.5-9.9zM91 5.1h10.7v28.3h5.2V5.1h10.7V.7H91zM134.3.1c-9.8 0-16.2 7.1-16.2 16.9s6.4 17 16.2 17c9.9 0 16.3-7.2 16.3-17S144.2.1 134.3.1zm.1 29.5c-7.8 0-11-5.9-11-12.6s3.2-12.6 11-12.6 11 5.9 11 12.6-3.2 12.7-11 12.6zM163.3 6.1c.9-.2 1.4-.7 1.4-1.6 0-1.2-.8-1.9-2.3-1.9h-2.7v6.5h1.3V6.6h1.1c1.7 0 1 2.2 1.5 2.5h1.3V9c-.5-.2 0-2.6-1.6-2.9zm-1.3-.5h-1V3.7h1c.7 0 1.3.1 1.3.9s-.5 1-1.3 1z"></path>
+                                <path d="M162.1 0c-3.3 0-5.9 2.5-5.9 5.9 0 3.4 2.6 5.9 5.9 5.9s5.9-2.5 5.9-5.9c0-3.4-2.6-5.9-5.9-5.9zm0 11c-2.7 0-4.9-2.1-4.9-5.1s2.2-5.1 4.9-5.1S167 3 167 5.9c0 3-2.2 5.1-4.9 5.1z"></path>
+                            </svg>
+                        </a>
+                    </h2>
+                    <p class="desc">Never worry about a parcel delivery again.</p>
+                </div>
+                <div class="fnb-area start-4">
+                    <ul class="fnb-list">
+                        <li class="fnb-item">
+                            <strong class="title">Discover</strong>
+                            <ul class="sub-list">
+                                <li class="sub-item"><a href="#">Home</a></li>
+                                <li class="sub-item"><a href="#">Smart mailbox</a></li>
+                                <li class="sub-item"><a href="#">How it works</a></li>
+                                <li class="sub-item"><a href="#">About</a></li>
+                            </ul>
+                        </li>
+                        <li class="fnb-item">
+                            <strong class="title">Info</strong>
+                            <ul class="sub-list">
+                                <li class="sub-item"><a href="#">Press</a></li>
+                                <li class="sub-item"><a href="#">Contact us</a></li>
+                                <li class="sub-item"><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="newsletter-area start-9">
+                    <strong class="title">Subscribe to our newsletter.</strong>
+                    <p class="desc">Curious about new developments and updates? Sign up for our newsletter!</p>
+                    <form action="#" method="post" class="mail-form">
+                        <fieldset>
+                            <legend class="blind">send newslatter</legend>
+                            <div class="send-box">
+                                <input type="text" class="input-text" placeholder="email@provider.com">
+                                <button type="submit" class="btn-send">
+                                    <span class="blind">send</span>
+                                    <span class="arrow">→</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <span class="info">By subscribing to our newsletter you agree to our privacy policy and will get commercial communication.</span>
+                </div>
+            </div>
+            <div class="group-flex8">
+                <div class="select-area">
+                    <select name="lang" id="lang" class="select-box">
+                        <option data-lang="en" value="https://custo.io/" selected>English</option>
+                        <option data-lang="fr" value="https://fr.custo.io/">Français</option>
+                        <option data-lang="nl" value="https://nl.custo.io/">Nederlands</option>
+                    </select>
+                </div>
+                <div class="sns-area">
+                    <a href="#" class="link-sns facebook">
+                        <span class="blind">facebook</span>
+                        <svg width="11" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.445 11.053V20h4.63v-8.904h3.16L11 7.382H7.109V4.659c0-.375.212-.879.86-.879h2.25V0h-4.2c-1.451 0-3.59 1.678-3.59 3.462v3.816H0v3.76l2.445.016v-.001Z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="link-sns instagram">
+                        <span class="blind">instagram</span>
+                        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.006 1.801c2.673 0 2.99.012 4.041.059.977.043 1.505.207 1.857.344.465.18.801.398 1.149.746.352.351.567.684.746 1.148.137.352.301.883.344 1.856.047 1.055.06 1.372.06 4.04 0 2.672-.013 2.989-.06 4.04-.043.977-.207 1.504-.344 1.856-.18.465-.398.8-.746 1.148a3.078 3.078 0 0 1-1.15.747c-.35.137-.883.3-1.856.343-1.055.047-1.372.06-4.041.06-2.674 0-2.99-.013-4.042-.06-.977-.042-1.504-.206-1.856-.343a3.094 3.094 0 0 1-1.15-.747 3.076 3.076 0 0 1-.746-1.148c-.137-.352-.3-.883-.344-1.856-.047-1.055-.058-1.371-.058-4.04 0-2.672.011-2.989.058-4.04.043-.976.207-1.504.344-1.856.18-.464.399-.8.747-1.148a3.078 3.078 0 0 1 1.149-.746c.352-.137.883-.301 1.856-.344 1.052-.047 1.368-.059 4.042-.059Zm0-1.801C7.289 0 6.949.012 5.882.059 4.82.105 4.088.277 3.455.524c-.66.257-1.22.597-1.774 1.156A4.9 4.9 0 0 0 .524 3.45C.278 4.087.106 4.813.059 5.876.012 6.946 0 7.286 0 10.002c0 2.715.012 3.055.059 4.122.047 1.063.219 1.793.465 2.426.258.66.598 1.22 1.157 1.774a4.892 4.892 0 0 0 1.77 1.152c.637.247 1.364.419 2.427.465 1.067.047 1.408.059 4.124.059 2.716 0 3.056-.012 4.123-.059 1.064-.046 1.794-.218 2.428-.464a4.892 4.892 0 0 0 1.77-1.153 4.89 4.89 0 0 0 1.153-1.77c.247-.637.419-1.363.465-2.426.047-1.067.059-1.407.059-4.122 0-2.716-.012-3.055-.059-4.122-.046-1.063-.218-1.793-.465-2.426a4.685 4.685 0 0 0-1.145-1.778 4.892 4.892 0 0 0-1.77-1.153C15.923.281 15.196.11 14.133.063 13.063.012 12.723 0 10.006 0Z"></path>
+                            <path d="M10.005 4.864a5.14 5.14 0 0 0-5.14 5.138 5.14 5.14 0 0 0 10.28 0 5.14 5.14 0 0 0-5.14-5.138Zm0 8.47a3.334 3.334 0 1 1 0-6.667 3.334 3.334 0 0 1 0 6.668ZM16.548 4.661a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="link-sns linkedin">
+                        <span class="blind">linkedin</span>
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.604 5.808h2.813v8.465H1.604V5.808Zm1.425-4.08c-.963 0-1.591.632-1.591 1.461 0 .813.61 1.463 1.554 1.463h.018c.981 0 1.592-.65 1.592-1.463-.018-.83-.61-1.461-1.573-1.461Zm8.294 3.881c-1.493 0-2.162.821-2.535 1.397V5.808H5.974c.037.794 0 8.465 0 8.465h2.814V9.545c0-.253.018-.505.092-.686.204-.506.667-1.03 1.444-1.03 1.018 0 1.425.777 1.425 1.915v4.529h2.813V9.419c0-2.6-1.387-3.81-3.239-3.81Z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="link-sns twitter">
+                        <span class="blind">twitter</span>
+                        <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.292 16c7.545 0 11.673-6.156 11.673-11.493 0-.173-.004-.35-.012-.523A8.262 8.262 0 0 0 20 1.892a8.19 8.19 0 0 1-2.355.635A4.073 4.073 0 0 0 19.449.293a8.326 8.326 0 0 1-2.605.98 4.129 4.129 0 0 0-2.328-1.22 4.165 4.165 0 0 0-2.601.425 4.072 4.072 0 0 0-1.803 1.895 3.988 3.988 0 0 0-.262 2.584 11.797 11.797 0 0 1-4.683-1.225A11.622 11.622 0 0 1 1.394.74 3.99 3.99 0 0 0 .946 3.68 4.045 4.045 0 0 0 2.664 6.13a4.158 4.158 0 0 1-1.86-.504v.05a4 4 0 0 0 .928 2.56 4.113 4.113 0 0 0 2.365 1.401 4.14 4.14 0 0 1-1.851.07 4.05 4.05 0 0 0 1.459 2.007 4.154 4.154 0 0 0 2.372.8A8.312 8.312 0 0 1 0 14.185 11.775 11.775 0 0 0 6.292 16Z"></path>
+                          </svg>
+                    </a>
+                </div>
+                <div class="corp-area">
+                    <ul class="corp-list">
+                        <li class="corp-item"><img src="./asset/images/footer-logo.webp" alt="logo vlaanderen"></li>
+                        <li class="corp-item"><a href="#" class="link-corp">Terms of use</a></li>
+                        <li class="corp-item"><a href="#" class="link-corp">Privacy</a></li>
+                        <li class="corp-item"><a href="#" class="link-corp">Shipping</a></li>
+                        <li class="corp-item"><a href="#" class="link-corp">Legal Notice</a></li>
+                        <li class="corp-item">© Custo 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./asset/js/custom.js"></script>
+</body>
+</html>
