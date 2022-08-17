@@ -122,7 +122,7 @@ $(function(){
                 trigger:el,
                 start:"top top",
                 end:"bottom top",
-                markers:true,
+                //markers:true,
                 //   scrub:1,
                 toggleActions:"play pause resume reverse",
             }
