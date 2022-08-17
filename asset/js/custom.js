@@ -38,14 +38,15 @@ $(function(){
                 trigger:parent,
                 start:"top 100%",
                 end:"bottom top",
-                markers:true,
-                scrub:5
+                //markers:true,
+                scrub:5,
+                duration:3
             },
             yPercent:10
         })
     })
 
-    // ol li click
+    // ol li click시 기존 자동 롤링 bar 멈추고 클릭한 요소의 bar 롤링 진행 
     $('.sc-works .info-box').click(function(e){
         e.preventDefault();
         idx = $(this).parents('.works-item').index();
@@ -69,7 +70,7 @@ $(function(){
         rankingRolling();
 
     })
-
+    // 자동 롤링 초기세팅
     let num = 0;
     rankRollingInit = function () {
         $('.works-item').eq(num).addClass('active')
@@ -84,6 +85,7 @@ $(function(){
     };
     rankRollingInit();
 
+    // 자동 롤링 실행 함수 
     rankingRolling = function () {
         ranking_rolling = setInterval(function () {
 
@@ -92,7 +94,7 @@ $(function(){
         guageBar = gsap.to(bar,5,{
             width:'100%',
             ease:'none',
-            onComplete:function(){
+            onComplete:function(){ // 전부 실행하면 실행
                 gsap.set('.guage',{width:'0%'})
             }
         })
@@ -103,6 +105,7 @@ $(function(){
 
     rankingRolling();
 
+    // homeapp 텍스트 애니메이션
     $('.thumb-item').each(function(i,el){
         idx1 = $(this).index();
         idx2 = $(this).index()+1;
@@ -117,15 +120,17 @@ $(function(){
                   toggleActions:"play pause resume reverse",
             }
         })
-        .to('.text-item:nth-child('+idx1+')',{ opacity:0,y:-100})
-        .to('.text-item:nth-child('+idx2+')',{ opacity:1})
+        .to('.text-item:nth-child('+idx1+')',{ opacity:0,y:-100}) // 이전 텍스트는 y축으로 날리고
+        .to('.text-item:nth-child('+idx2+')',{ opacity:1}) // 다음 택스트는 불투명하게
       })
-      $('.sc-product .column-left .thumb-box').hover(function(){
-        $(this).children().css({
+
+      // hover
+        $('.sc-product .column-left .thumb-box').hover(function(){
+        $(this).css({
             'transform':'scale(1.05)'
         })
     },function(){
-        $(this).children().css({
+        $(this).css({
             'transform':'scale(1)'
         })
     })

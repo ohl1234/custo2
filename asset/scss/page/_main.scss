@@ -154,10 +154,13 @@
     }
     .column-left{
         grid-column: auto/span 8;
-        &:hover{
-            // img{
-            //     transform: scale(1.05) translateZ(0);
-            // }// 지금 여기가 안먹는거임
+        .thumb-wrap{
+            clip-path: inset(0);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            &:hover{
+                -webkit-clip-path: inset(0.625rem round 1.25rem);
+                clip-path: inset(0.625rem round 1.25rem);
+            }
         }
         .thumb-box{
             position: relative;
@@ -166,15 +169,15 @@
             padding-top: 84.7457627119%;
             overflow: hidden;
             border-radius: 0.5rem;
-            clip-path: inset(0);
-            transition: clip-path 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
             img{
                 top: -10%;
                 left: 0;
             }
             &:hover{
-                -webkit-clip-path: inset(0.625rem round 1.25rem);
-                clip-path: inset(0.625rem round 1.25rem);
+                transform: scale(1.05) translateZ(0);
+                img{
+                }
             }
         }
     }

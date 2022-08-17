@@ -808,6 +808,15 @@ input, select, button, fieldset {
 .sc-product .column-left {
   grid-column: auto/span 8;
 }
+.sc-product .column-left .thumb-wrap {
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.sc-product .column-left .thumb-wrap:hover {
+  -webkit-clip-path: inset(0.625rem round 1.25rem);
+  clip-path: inset(0.625rem round 1.25rem);
+}
 .sc-product .column-left .thumb-box {
   position: relative;
   display: block;
@@ -815,17 +824,14 @@ input, select, button, fieldset {
   padding-top: 84.7457627119%;
   overflow: hidden;
   border-radius: 0.5rem;
-  -webkit-clip-path: inset(0);
-          clip-path: inset(0);
-  transition: clip-path 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .sc-product .column-left .thumb-box img {
   top: -10%;
   left: 0;
 }
 .sc-product .column-left .thumb-box:hover {
-  -webkit-clip-path: inset(0.625rem round 1.25rem);
-  clip-path: inset(0.625rem round 1.25rem);
+  transform: scale(1.05) translateZ(0);
 }
 .sc-product .info-box {
   display: flex;
