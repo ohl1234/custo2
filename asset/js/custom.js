@@ -12,7 +12,7 @@ $(function(){
     .addLabel('b')
     .from('.group-flex1 .thumb-area figure',{ scale:1.2 },'b-=0.4')
     .from('.sc-home .text',{ yPercent:100, stagger:0.1 },'b-=0.4')
-    .from('.home-logo-area .char',{ duration:1, dalay:0.2, opacity:0, yPercent:103, stagger:0.2 },'b-=0.4')
+    .from('.home-logo-area .char',{ duration:1, opacity:0, yPercent:103, stagger:0.2 },'b-=0.4')
 
     const introAni = gsap.timeline({
 
