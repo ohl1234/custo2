@@ -142,6 +142,10 @@
         border-top: 1px solid #D8D8D8;
         padding: 3.375rem 0;
     }
+    .column-left{
+        display: flex;
+        align-items: center;
+    }
     .select-area{
         position: relative;
         &::before{
@@ -189,13 +193,21 @@
             fill: $color-gray1;
         }
     }
+    .corp-area{
+        display: flex;
+        flex-flow: row wrap;
+    }
     .corp-list{
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         color: $color-gray1;
     }
     .corp-item{
         margin: 0 1.25rem;
+        &:last-child{
+            margin-right: 0;
+        }
     }
     .link-corp{
         position: relative;

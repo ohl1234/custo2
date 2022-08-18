@@ -231,6 +231,7 @@ input, select, button, fieldset {
   top: 0;
   left: 0;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -248,6 +249,7 @@ input, select, button, fieldset {
 }
 .header .gnb-list {
   display: flex;
+  flex-flow: row wrap;
   min-height: 0;
 }
 .header .gnb-item + li {
@@ -477,6 +479,10 @@ input, select, button, fieldset {
   border-top: 1px solid #D8D8D8;
   padding: 3.375rem 0;
 }
+.footer .column-left {
+  display: flex;
+  align-items: center;
+}
 .footer .select-area {
   position: relative;
 }
@@ -521,13 +527,21 @@ input, select, button, fieldset {
 .footer .sns-area svg {
   fill: #8E9194;
 }
+.footer .corp-area {
+  display: flex;
+  flex-flow: row wrap;
+}
 .footer .corp-list {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   color: #8E9194;
 }
 .footer .corp-item {
   margin: 0 1.25rem;
+}
+.footer .corp-item:last-child {
+  margin-right: 0;
 }
 .footer .link-corp {
   position: relative;

@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -21,6 +22,7 @@
     }
     .gnb-list{
         display: flex;
+        flex-flow: row wrap;
         min-height: 0;
     }
     .gnb-item{

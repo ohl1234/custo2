@@ -107,15 +107,15 @@ $(function(){
     })
     // 5. homeapp 텍스트 애니메이션 - each문 활용
     $('.thumb-item').each(function(i,el){
-        idx1 = $(this).index();
-        idx2 = $(this).index()+1;
-        gsap.set('.text-item',{opacity:0})
+        idx1 = $(this).index(); // index
+        idx2 = $(this).index()+1; // index+1
+        gsap.set('.text-item',{opacity:0}) // 텍스트영역 초기세팅 opacity 0
         const textAni = gsap.timeline({
             scrollTrigger:{
                 trigger:el,
                 start:"top 20%",
                 end:"bottom top",
-                markers:true,
+                //markers:true,
                 toggleActions:"play pause resume reverse"
             }
         })
