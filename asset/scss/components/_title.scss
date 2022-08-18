@@ -6,3 +6,9 @@
     font-size: max(4vw, 40px);
     line-height: 1.046875;
 }
+
+@include mobile{
+    .sc-title{
+        font-size: max(10.1333333333vw, 38px);
+    }
+}

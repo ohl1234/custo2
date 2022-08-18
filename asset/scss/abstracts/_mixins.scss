@@ -32,12 +32,18 @@
     grid-gap: 1.5rem;
 }
 
+@mixin grid-6{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.5rem;
+}
+
 //767px
 
 $moblie:767px;
 
 @mixin mobile {
-    @media (max-width:$mobile){
+    @media (max-width:$moblie){
         @content;
     }
 }

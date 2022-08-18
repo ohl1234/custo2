@@ -26,3 +26,11 @@
 .mobile{
     display: none;
 }
+@include mobile{
+    .mobile{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
+}
