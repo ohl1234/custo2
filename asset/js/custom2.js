@@ -53,30 +53,6 @@ $(function(){
 
     })
 
-    // 4. sc-works li클릭 이벤트 - 클릭시 자동 롤링,bar 멈추고 클릭한 요소의 bar 롤링진행
-    $('.sc-works .info-box').click(function(e){
-        e.preventDefault();
-        idx = $(this).parents('.works-item').index();
-        $('.sc-works .thumb-box').removeClass('active');
-        $(this).siblings('.thumb-box').addClass('active'); // thumb-box scale active
-
-        clearInterval(works_Rolling); // 누르면 자동 롤링 해제
-        guageBar.kill(); // gsap 애니메이션 삭제
-        gsap.set('.guage',{width:'0%'}) // gsap 애니메이션 기본 세팅
-        num = idx; // works-item index 값 num 변수 대입
-        bar = $('.works-item').eq(num).find('.guage');
-        $('.works-item').eq(num).addClass('active').siblings().removeClass('active');
-        guageBar = gsap.to(bar,5,{
-            width:'100%',
-            ease:'none',
-            onComplete:function(){
-                gsap.set('.guage',{width:'0%'})
-            }
-        })// 게이지바 변수, 애니메이션 재설정
-        num++; // index++
-        worksRolling(); // 자동 롤링 재생
-    })
-
     // 3. sc-works 자동 롤링 함수, 자동 롤링 셋팅
     let num = 0;
     workRollingInit = function(){
@@ -112,6 +88,29 @@ $(function(){
 
     worksRolling(); // 이때 setInterval이 5초뒤에 실행되기 때문에 초기셋팅 잡아줘야함
 
+    // 4. sc-works li클릭 이벤트 - 클릭시 자동 롤링,bar 멈추고 클릭한 요소의 bar 롤링진행
+    $('.sc-works .info-box').click(function(e){
+        e.preventDefault();
+        idx = $(this).parents('.works-item').index();
+        $('.sc-works .thumb-box').removeClass('active');
+        $(this).siblings('.thumb-box').addClass('active'); // thumb-box scale active
+
+        clearInterval(works_Rolling); // 누르면 자동 롤링 해제
+        guageBar.kill(); // gsap 애니메이션 삭제
+        gsap.set('.guage',{width:'0%'}) // gsap 애니메이션 기본 세팅
+        num = idx; // works-item index 값 num 변수 대입
+        bar = $('.works-item').eq(num).find('.guage');
+        guageBar = gsap.to(bar,5,{
+            width:'100%',
+            ease:'none',
+            onComplete:function(){
+                gsap.set('.guage',{width:'0%'})
+            }
+        })// 게이지바 변수, 애니메이션 재설정
+        $('.works-item').eq(num).addClass('active').siblings().removeClass('active');
+        num++; // index++
+        worksRolling(); // 자동 롤링 재생
+    })
     // 5. sc-homeapp
     $('.thumb-item').each(function(i,el){
         idx1 = $(this).index();
