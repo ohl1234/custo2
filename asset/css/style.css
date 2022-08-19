@@ -1131,7 +1131,7 @@ input, select, button, fieldset {
   cursor: none;
 }
 .sc-product .column-left .thumb-box img {
-  top: 0;
+  top: -10%;
   left: 0;
 }
 .sc-product .info-box {
@@ -1257,25 +1257,17 @@ input, select, button, fieldset {
 .sc-works .works-item.active .info-box {
   color: #000;
 }
-.sc-works .works-item:first-of-type .info-box {
-  padding-top: 0;
-}
 .sc-works .thumb-wrap {
   position: relative;
+  top: -67%;
   grid-column: auto/span 3;
-}
-.sc-works .thumb-wrap::before {
-  content: "";
-  display: block;
-  padding-top: 67.8899082569%;
 }
 .sc-works .thumb-box {
   position: absolute;
-  border-radius: 0.5rem;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  border-radius: 0.5rem;
   transform-origin: center center;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1283,6 +1275,11 @@ input, select, button, fieldset {
   -webkit-clip-path: inset(20% round 1.25rem);
           clip-path: inset(20% round 1.25rem);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.sc-works .thumb-box::before {
+  content: "";
+  display: block;
+  padding-top: 67.8899082569%;
 }
 .sc-works .thumb-box img {
   position: absolute;
@@ -1359,23 +1356,17 @@ input, select, button, fieldset {
     grid-gap: 1.5rem;
     row-gap: 0;
   }
-  .sc-works .works-item:nth-of-type(1) .thumb-wrap {
-    margin-bottom: 2.375rem;
-  }
-  .sc-works .works-item:nth-of-type(1) .thumb-wrap::before {
-    padding-top: 72%;
+  .sc-works .works-item:nth-of-type(1) {
+    padding-top: 80%;
   }
   .sc-works .thumb-wrap {
     position: static;
     grid-column: auto/span 6;
   }
-  .sc-works .thumb-wrap::before {
-    padding-top: 0;
-  }
   .sc-works .thumb-box {
-    position: absolute;
-    height: 26.5%;
     transform: none;
+    top: 0;
+    margin-bottom: 2.375rem;
   }
   .sc-works .info-box {
     display: grid;
@@ -1385,6 +1376,9 @@ input, select, button, fieldset {
   }
   .sc-works .info-box.start-6 {
     grid-column-start: 1;
+  }
+  .sc-works .info-box:nth-of-type(1) {
+    padding-top: 0;
   }
   .sc-works .num {
     font-size: max(5.3333333333vw, 20px);

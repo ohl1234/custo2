@@ -35,20 +35,25 @@ $(function(){
     .to('.sc-home .thumb-area',{yPercent:-10},'c')
 
     // 2. 모든 이미지 페럴렉스 통합판 - each문 활용
-    $('[data-parallex]').each(function(i,el){
-        parent = $(this).parent()//thumb-box 변수
-        gsap.to(el,{
-            scrollTrigger:{
-                trigger:parent,
-                start:"top bottom", 
-                end:"bottom top",
-                //markers:true,
-                scrub:5,
-                duration:3
-            },
-            yPercent:10
-        })
-    })
+    ScrollTrigger.matchMedia({
+        // large
+        "(min-width: 768px)": function() {
+            $('[data-parallex]').each(function(i,el){
+                parent = $(this).parent()//thumb-box 변수
+                gsap.to(el,{
+                    scrollTrigger:{
+                        trigger:parent,
+                        start:"top bottom", 
+                        end:"bottom top",
+                        //markers:true,
+                        scrub:5,
+                        duration:3
+                    },
+                    yPercent:10
+                })
+            })
+        }
+      });
 
     // 3. sc-works 자동 롤링 함수, 자동 롤링 셋팅
     let num = 0;
