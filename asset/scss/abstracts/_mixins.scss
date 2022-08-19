@@ -39,11 +39,18 @@
 }
 
 //767px
-
+$laptop:1265px;
+$tablet:768px;
 $moblie:767px;
 
 @mixin mobile {
     @media (max-width:$moblie){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:$tablet) and (max-width:$laptop){
         @content;
     }
 }
