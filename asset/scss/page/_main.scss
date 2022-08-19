@@ -462,6 +462,9 @@
             row-gap: 0;
             &:nth-of-type(1){
                 padding-top: 80%;
+                .info-box{
+                    padding-top: 0;
+                }
             }
         }
         .thumb-wrap{
@@ -479,10 +482,6 @@
             &.start-6{
                 grid-column-start: 1;
             }
-            &:nth-of-type(1){
-                padding-top: 0;
-            }
-
         }
         .num{
             font-size: max(5.3333333333vw, 20px);
