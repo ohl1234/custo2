@@ -72,7 +72,7 @@
         transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     .link-hover{
-        pointer-events: none;
+        //pointer-events: none;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -107,7 +107,7 @@
             }
         }
     }
-    .pc{
+    .order-txt{
         position: relative;
         z-index: 1;
     }
@@ -134,9 +134,11 @@
             flex-direction: column;
             justify-content: space-between;
             padding: 8.75rem 1.75rem 1.5rem;
-            // transform: translateX(100%) translateZ(0);
-            // transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-
+            //transform: translateX(100%) translateZ(0);
+            //transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+            &.active{
+                left:0;
+            }
         }
         .gnb-list{
             display: flex;
@@ -198,9 +200,8 @@
                 border-radius: 2.5rem;
             }
             &:hover{
-                color: $color-dark;
-                &::after{
-                    opacity: 1;
+                .mobile{
+                    color: $color-dark;
                 }
             }
         }
@@ -249,10 +250,6 @@
         .btn-wrap{
             @include position-Center;
             display: block;
-        }
-        .pc{
-            position: relative;
-            z-index: 1;
         }
     }
 }
