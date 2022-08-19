@@ -7,6 +7,7 @@
  * 6. hover 이벤트
  * 7. swiper slide
  * 8. 국가변경 셀렉트
+ * 9. btn-menu 클릭시 gnb-area등장
  */
 
 $(function(){
@@ -147,5 +148,16 @@ $(function(){
         window.location.href = currLang;
         $('#lang option:eq(0)').prop("selected",true);
     })
-
+    // 9. btn-menu 클릭시 gnb-area등장
+    $('.btn-menu').click(function(){
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active')
+            $('.gnb-area').removeClass('active')
+            $('.link-order').animate({opacity:1})
+        } else {
+            $(this).addClass('active')
+            $('.gnb-area').addClass('active')
+            $('.link-order').animate({opacity:0})
+        }
+    })
 })
