@@ -40,6 +40,7 @@
 
 //767px
 $laptop:1265px;
+$laptop2:1024px;
 $tablet:768px;
 $moblie:767px;
 
@@ -54,3 +55,10 @@ $moblie:767px;
         @content;
     }
 }
+
+@mixin laptop2 {
+    @media (min-width:$tablet) and (max-width:$laptop2){
+        @content;
+    }
+}
+

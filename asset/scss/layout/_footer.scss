@@ -247,8 +247,13 @@
 }
 @include tablet{
     .footer{
-        .group-flex8{
-            display: block;
+        .fnb-area{
+            columns: 1;
+        }
+        .fnb-item {
+            &:last-of-type {
+                margin-top: 25px;
+            }
         }
     }
 }

@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "PPNeueMontreal-Medium";
-  src: url(../font/PPNeueMontreal-Medium.eot);
-  src: url(../font/PPNeueMontreal-Medium.eot?#iefix) format("embedded-opentype"), url(../font/PPNeueMontreal-Medium.svg#PPNeueMontreal-Medium) format("svg"), url(../font/PPNeueMontreal-Medium.otf) format("otf"), url(../font/PPNeueMontreal-Medium.ttf) format("truetype"), url(../font/PPNeueMontreal-Medium.woff) format("woff"), url(../font/PPNeueMontreal-Medium.woff2) format("woff2");
-  font-weight: 530;
+  font-family: "zapf-humanist-601-bt";
+  src: url(../font/zapf-humanist-601-bt.eot);
+  src: url(../font/zapf-humanist-601-bt.eot?#iefix) format("embedded-opentype"), url(../font/zapf-humanist-601-bt.otf) format("otf"), url(../font/zapf-humanist-601-bt.svg#zapf-humanist-601-bt) format("svg"), url(../font/zapf-humanist-601-bt.ttf) format("truetype"), url(../font/zapf-humanist-601-bt.woff) format("woff"), url(../font/zapf-humanist-601-bt.woff2) format("woff2");
+  font-weight: 601;
   font-style: normal;
 }
 * {
@@ -63,10 +63,10 @@ ul, ol {
     @세팅구역
 */
 body {
-  font-family: "PPNeueMontreal-Medium", arial, sans-serif;
+  font-family: "zapf-humanist-601-bt", arial, sans-serif;
   color: #000;
   font-size: 16px;
-  background-color: #fff;
+  background-color: #fdfdf5;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -207,8 +207,8 @@ input, select, button, fieldset {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 20;
-  background-color: #fff;
+  z-index: 1000;
+  background-color: #93694f;
 }
 .load-wrap {
   position: absolute;
@@ -216,6 +216,9 @@ input, select, button, fieldset {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+}
+.load svg {
+  fill: #fff;
 }
 
 .wrapper {
@@ -250,7 +253,7 @@ input, select, button, fieldset {
   font-size: max(1.4vw, 20px);
   line-height: 1.4285714286;
   color: #fff;
-  z-index: 1000;
+  z-index: 100;
 }
 .header .link-logo svg {
   fill: #fff;
@@ -356,7 +359,7 @@ input, select, button, fieldset {
     z-index: -1;
     width: 100%;
     height: 100vh;
-    background-color: #000;
+    background-color: #93694f;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -440,7 +443,7 @@ input, select, button, fieldset {
     content: "";
     position: absolute;
     inset: 0;
-    background: #ffffff;
+    background: #fff;
     border-radius: 50%;
     opacity: 0.15;
     transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -450,7 +453,7 @@ input, select, button, fieldset {
     display: inline-block;
     width: 20px;
     height: 2px;
-    background: #ffffff;
+    background: #fff;
     margin: 2px 0;
     transform: translateZ(0);
     transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
@@ -494,7 +497,7 @@ input, select, button, fieldset {
   grid-column: auto/span 2;
 }
 .footer .ft-logo-area .desc {
-  color: #8E9194;
+  color: #75787a;
 }
 .footer .footer-logo {
   margin-bottom: 2.125rem;
@@ -515,7 +518,7 @@ input, select, button, fieldset {
 .footer .sub-item a {
   position: relative;
   line-height: 1.619047619;
-  color: #8E9194;
+  color: #75787a;
 }
 .footer .sub-item a::before, .footer .sub-item a::after {
   content: "";
@@ -525,7 +528,7 @@ input, select, button, fieldset {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #8E9194;
+  background: #75787a;
   opacity: 0;
   transform-origin: left;
   transform: scaleX(0) translateZ(0);
@@ -550,7 +553,7 @@ input, select, button, fieldset {
   grid-column-start: 9;
 }
 .footer .newsletter-area .desc {
-  color: #8E9194;
+  color: #75787a;
 }
 .footer .mail-form {
   display: block;
@@ -664,7 +667,7 @@ input, select, button, fieldset {
   margin-left: 1.125rem;
 }
 .footer .sns-area svg {
-  fill: #8E9194;
+  fill: #75787a;
 }
 .footer .corp-area {
   display: block;
@@ -674,7 +677,7 @@ input, select, button, fieldset {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  color: #8E9194;
+  color: #75787a;
 }
 .footer .corp-item {
   margin: 0 1.25rem;
@@ -695,7 +698,7 @@ input, select, button, fieldset {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #8E9194;
+  background: #75787a;
   opacity: 0;
   transform-origin: left;
   transform: scaleX(0) translateZ(0);
@@ -716,8 +719,12 @@ input, select, button, fieldset {
 }
 
 @media (min-width: 768px) and (max-width: 1265px) {
-  .footer .group-flex8 {
-    display: block;
+  .footer .fnb-area {
+    -moz-columns: 1;
+         columns: 1;
+  }
+  .footer .fnb-item:last-of-type {
+    margin-top: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -818,7 +825,7 @@ input, select, button, fieldset {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #8E9194;
+    background: #75787a;
     opacity: 0;
     transform-origin: left;
     transform: scaleX(0) translateZ(0);
@@ -931,7 +938,7 @@ input, select, button, fieldset {
   width: 100%;
   max-width: 100%;
   height: 100vh;
-  background-color: #9EA29F;
+  background: linear-gradient(180deg, rgb(201, 192, 177) 0%, rgb(160, 149, 133) 100%);
   padding: 0 5.3333333333vw;
   color: #fff;
   overflow: hidden;
@@ -946,7 +953,7 @@ input, select, button, fieldset {
   padding-top: 18vh;
 }
 .sc-home .title-area {
-  grid-column: auto/span 5;
+  grid-column: auto/span 6;
   z-index: 6;
 }
 .sc-home .title-area .sc-title > span {
@@ -958,24 +965,29 @@ input, select, button, fieldset {
 }
 .sc-home .home-logo-area {
   position: absolute;
-  bottom: 5vh;
+  bottom: 4vh;
   left: 0;
   z-index: 4;
   width: 100%;
 }
 .sc-home .home-logo-area svg {
-  width: 100%;
-  height: auto;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
   fill: #fff;
 }
 .sc-home .thumb-area {
   position: absolute;
-  top: 18vh;
+  top: 10vh;
   left: 0;
   z-index: 3;
   width: 100%;
   height: 100%;
   pointer-events: none;
+}
+.sc-home .thumb-area figure {
+  width: 100%;
+  height: 100%;
 }
 .sc-home .thumb-area img {
   position: absolute;
@@ -986,6 +998,17 @@ input, select, button, fieldset {
   transform: translateX(-50%) scale(1) translateZ(0);
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sc-home .thumb-area {
+    position: absolute;
+    top: 0;
+  }
+  .sc-home .thumb-area img {
+    top: auto;
+    bottom: 0;
+    width: 50vw;
+  }
+}
 @media (max-width: 767px) {
   .sc-home {
     padding: 0 1.75rem;
@@ -1001,7 +1024,7 @@ input, select, button, fieldset {
   .sc-home .thumb-area img {
     width: 70%;
     top: auto;
-    bottom: -130px;
+    bottom: -10px;
   }
 }
 .sc-smart {
@@ -1066,7 +1089,7 @@ input, select, button, fieldset {
 }
 .sc-smart .text {
   margin-top: 1.125rem;
-  color: #8E9194;
+  color: #75787a;
 }
 
 @media (max-width: 767px) {
@@ -1122,7 +1145,7 @@ input, select, button, fieldset {
   }
   .sc-smart .text {
     margin-top: 1.125rem;
-    color: #8E9194;
+    color: #75787a;
   }
 }
 .sc-product {
@@ -1153,11 +1176,14 @@ input, select, button, fieldset {
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1.5rem;
 }
+.sc-product .group-flex5 .thumb-box {
+  display: block;
+}
 .sc-product .group-flex5 img {
   position: absolute;
   width: 110%;
-  height: 110%;
-  top: -10%;
+  height: auto;
+  top: -5%;
   left: 0;
   transform: translateZ(0);
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1178,14 +1204,14 @@ input, select, button, fieldset {
   position: relative;
   display: block;
   width: 100%;
-  padding-top: 84.7457627119%;
+  padding-top: 98.7457627119%;
   overflow: hidden;
   border-radius: 0.5rem;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: none;
 }
 .sc-product .column-left .thumb-box img {
-  top: -10%;
+  top: -5%;
   left: 0;
 }
 .sc-product .info-box {
@@ -1201,14 +1227,14 @@ input, select, button, fieldset {
   margin-left: 1.4375rem;
   font-size: max(1.4vw, 20px);
   line-height: 1.4285714286;
-  color: #8E9194;
+  color: #75787a;
 }
 .sc-product .column-right {
   grid-column: auto/span 4;
 }
 .sc-product .column-right .thumb-box {
   position: relative;
-  padding-top: 131.3953488372%;
+  padding-top: 145.3953488372%;
   border-radius: 0.5rem;
   overflow: hidden;
   cursor: none;
@@ -1325,6 +1351,7 @@ input, select, button, fieldset {
   transform-origin: center center;
   -o-object-fit: contain;
      object-fit: contain;
+  background-color: #eae2d4;
   opacity: 0;
   -webkit-clip-path: inset(20% round 1.25rem);
           clip-path: inset(20% round 1.25rem);
@@ -1462,7 +1489,7 @@ input, select, button, fieldset {
   grid-gap: 1.5rem;
   padding: 11.375rem 3.875rem;
   background: #4B514D;
-  color: #ffffff;
+  color: #fff;
   border-radius: 0.5rem;
 }
 .sc-homeapp .column-left {
@@ -1494,7 +1521,7 @@ input, select, button, fieldset {
   margin-bottom: 1.125rem;
 }
 .sc-homeapp .text {
-  color: #8E9194;
+  color: #D8D8D8;
 }
 .sc-homeapp .column-right {
   grid-column: auto/span 5;
@@ -1621,7 +1648,7 @@ input, select, button, fieldset {
 }
 .sc-about .desc {
   margin-bottom: 2.6875rem;
-  color: #8E9194;
+  color: #75787a;
 }
 
 @media (max-width: 767px) {
